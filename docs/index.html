@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radar — missions intérim graphisme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0E1218;
+    --surface:#171D26;
+    --surface-hover:#1D2530;
+    --border:#262F3B;
+    --text:#E9ECF1;
+    --text-dim:#8B96A5;
+    --accent:#F2A93B;
+    --accent-dim:#7A5A22;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Space Grotesk', system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mono{ font-family:'IBM Plex Mono', ui-monospace, monospace; }
+
+  header{
+    padding:48px 24px 32px;
+    max-width:920px;
+    margin:0 auto;
+    border-bottom:1px solid var(--border);
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:16px;
+  }
+  .radar-icon{
+    width:40px;height:40px;flex:none;
+    border-radius:50%;
+    border:1.5px solid var(--accent-dim);
+    position:relative;
+    overflow:hidden;
+    background:radial-gradient(circle at center, rgba(242,169,59,0.08), transparent 70%);
+  }
+  .radar-icon::before{
+    content:"";
+    position:absolute; inset:0;
+    background:conic-gradient(from 0deg, transparent 0deg, rgba(242,169,59,0.55) 25deg, transparent 60deg);
+    animation:sweep 3.2s linear infinite;
+  }
+  .radar-icon::after{
+    content:"";
+    position:absolute; top:50%; left:50%;
+    width:4px;height:4px; border-radius:50%;
+    background:var(--accent);
+    transform:translate(6px,-10px);
+    box-shadow:0 0 6px 1px rgba(242,169,59,0.8);
+  }
+  @keyframes sweep{ to{ transform:rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce){ .radar-icon::before{ animation:none; } }
+
+  h1{ font-size:1.7rem; margin:0; font-weight:700; letter-spacing:0.01em; }
+  .tagline{ color:var(--text-dim); margin-top:6px; font-size:0.95rem; }
+
+  .meta-row{
+    margin-top:20px;
+    display:flex; gap:24px; flex-wrap:wrap;
+    font-size:0.8rem; color:var(--text-dim);
+  }
+  .meta-row strong{ color:var(--accent); }
+
+  main{ max-width:920px; margin:0 auto; padding:28px 24px 80px; }
+
+  .controls{
+    display:flex; gap:10px; margin-bottom:24px; flex-wrap:wrap;
+  }
+  input[type="text"]{
+    flex:1; min-width:220px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:11px 14px;
+    border-radius:var(--radius);
+    font-family:inherit;
+    font-size:0.95rem;
+  }
+  input[type="text"]:focus{
+    outline:2px solid var(--accent);
+    outline-offset:1px;
+    border-color:var(--accent);
+  }
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:18px 20px;
+    margin-bottom:12px;
+    transition:border-color 0.15s ease, background 0.15s ease;
+  }
+  .card:hover{ border-color:var(--accent-dim); background:var(--surface-hover); }
+
+  .card-top{
+    display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap;
+  }
+  .card h2{ font-size:1.05rem; margin:0; font-weight:600; }
+  .badge{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--accent);
+    border:1px solid var(--accent-dim);
+    padding:3px 8px;
+    border-radius:100px;
+    white-space:nowrap;
+  }
+  .card-meta{
+    margin-top:6px;
+    font-size:0.82rem; color:var(--text-dim);
+    display:flex; gap:14px; flex-wrap:wrap;
+  }
+  .card-desc{
+    margin-top:10px; font-size:0.88rem; color:#B7C0CC; line-height:1.5;
+  }
+  .card-link{
+    display:inline-block; margin-top:12px;
+    font-size:0.85rem; color:var(--accent); text-decoration:none;
+    border-bottom:1px solid var(--accent-dim);
+  }
+  .card-link:hover{ border-color:var(--accent); }
+
+  .empty{
+    text-align:center; padding:60px 20px; color:var(--text-dim);
+  }
+  .empty strong{ color:var(--text); display:block; margin-bottom:8px; font-size:1.05rem; }
+
+  footer{
+    max-width:920px; margin:0 auto; padding:0 24px 40px;
+    color:var(--text-dim); font-size:0.78rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="radar-icon" aria-hidden="true"></div>
+    <div>
+      <h1>Radar missions</h1>
+      <div class="tagline">Missions d'intérim en graphisme &amp; design, centralisées automatiquement depuis l'API France Travail.</div>
+    </div>
+  </div>
+  <div class="meta-row">
+    <span>Dernière mise à jour : <strong id="updated-at">—</strong></span>
+    <span><strong id="total-count">0</strong> missions en base</span>
+    <span id="shown-count-wrap">Affichées : <strong id="shown-count">0</strong></span>
+  </div>
+</header>
+
+<main>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Filtrer par mot-clé, ville, entreprise…" autocomplete="off">
+  </div>
+
+  <div id="list"></div>
+  <div id="empty" class="empty" style="display:none;">
+    <strong>Aucune mission pour l'instant</strong>
+    Le premier passage du robot n'a peut-être pas encore eu lieu, ou aucun résultat ne correspond à ton filtre.
+  </div>
+</main>
+
+<footer>
+  Source : API officielle "Offres d'emploi" de France Travail — mise à jour automatique quotidienne via GitHub Actions.
+</footer>
+
+<script>
+let allOffres = [];
+
+function formatDate(iso){
+  if(!iso) return "date inconnue";
+  const d = new Date(iso);
+  return d.toLocaleDateString('fr-FR', { day:'numeric', month:'short', year:'numeric' });
+}
+
+function render(offres){
+  const list = document.getElementById('list');
+  const empty = document.getElementById('empty');
+  document.getElementById('shown-count').textContent = offres.length;
+
+  if(offres.length === 0){
+    list.innerHTML = "";
+    empty.style.display = "block";
+    return;
+  }
+  empty.style.display = "none";
+
+  list.innerHTML = offres.map(o => `
+    <article class="card">
+      <div class="card-top">
+        <h2>${escapeHtml(o.titre || "Sans titre")}</h2>
+        <span class="badge">Intérim</span>
+      </div>
+      <div class="card-meta mono">
+        <span>${escapeHtml(o.entreprise || "Entreprise non précisée")}</span>
+        <span>${escapeHtml(o.lieu || "Lieu non précisé")}</span>
+        <span>${formatDate(o.date_publication)}</span>
+        ${o.salaire ? `<span>${escapeHtml(o.salaire)}</span>` : ""}
+      </div>
+      ${o.description ? `<div class="card-desc">${escapeHtml(o.description)}…</div>` : ""}
+      ${o.url ? `<a class="card-link" href="${escapeHtml(o.url)}" target="_blank" rel="noopener">Voir l'offre →</a>` : ""}
+    </article>
+  `).join("");
+}
+
+function escapeHtml(str){
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function applyFilter(){
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  if(!q){ render(allOffres); return; }
+  const filtered = allOffres.filter(o =>
+    (o.titre || "").toLowerCase().includes(q) ||
+    (o.entreprise || "").toLowerCase().includes(q) ||
+    (o.lieu || "").toLowerCase().includes(q) ||
+    (o.description || "").toLowerCase().includes(q)
+  );
+  render(filtered);
+}
+
+document.getElementById('search').addEventListener('input', applyFilter);
+
+fetch('./data.json?_=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    allOffres = data.offres || [];
+    document.getElementById('total-count').textContent = data.count ?? allOffres.length;
+    document.getElementById('updated-at').textContent = data.generated_at
+      ? new Date(data.generated_at).toLocaleString('fr-FR', { dateStyle:'medium', timeStyle:'short' })
+      : "jamais (premier passage en attente)";
+    render(allOffres);
+  })
+  .catch(() => {
+    document.getElementById('empty').style.display = "block";
+    document.getElementById('empty').querySelector('strong').textContent = "Impossible de charger les données";
+  });
+</script>
+
+</body>
+</html>
