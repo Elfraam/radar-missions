@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T19:46:15.678039+00:00",
+  "generated_at": "2026-08-22T06:44:57.502850+00:00",
   "count": 70,
   "offres": [
     {
@@ -12,17 +12,6 @@
       "salaire": "Horaire de 13.34 Euros sur 12.0 mois",
       "duree_contrat": "35H/semaine\nTravail en journée",
       "url": "https://candidat.francetravail.fr/offres/recherche/detail/212TLRQ"
-    },
-    {
-      "id": "6175286",
-      "titre": "Contrôleur qualité H/F",
-      "entreprise": "CRIT MEAUX",
-      "lieu": "77 - Tournan-en-Brie",
-      "date_publication": "2026-08-21T14:34:06.096Z",
-      "description": "Dans le cadre du développement de son activité, nous recherchons pour notre client, spécialisé dans le secteur de la logistique, un Contrôleur qualité à TOURNAN EN BRIE - 77220 en intérim. \nLes horaires sont de 35 heures par semaine avec une rémunération horaire de 12.31EUR (EUR).\n\nEn tant que Contrôleur qualité, vous serez amené.e à :\n- Contrôler la conformité des produits selon les normes établi",
-      "salaire": "Horaire de 12.31 Euros à 12.31 Euros",
-      "duree_contrat": "",
-      "url": "https://candidat.francetravail.fr/offres/recherche/detail/6175286"
     },
     {
       "id": "6170509",
@@ -551,6 +540,17 @@
       "salaire": "Horaire de 12.31 Euros à 12.31 Euros",
       "duree_contrat": "",
       "url": "https://candidat.francetravail.fr/offres/recherche/detail/6023852"
+    },
+    {
+      "id": "6023788",
+      "titre": "Agent de laminage (H/F)",
+      "entreprise": "Domino RH - Missions Metz",
+      "lieu": "57 - Gandrange",
+      "date_publication": "2026-08-15T14:34:21.255Z",
+      "description": "Domino RH Missions Metz recrute, pour le compte de l'un de ses clients, un(e) Agent de Laminage.\n\nSous la responsabilité du Chef d'équipe, vous contribuerez au bon déroulement des opérations de laminage et veillerez au respect des exigences de qualité, de sécurité et de production.\n\nVos missions : \n\n- Surveiller et réguler une machine ou une ligne automatisée\n- Effectuer des contrôles de conformit",
+      "salaire": "",
+      "duree_contrat": "",
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/6023788"
     },
     {
       "id": "6021381",
