@@ -1,7 +1,18 @@
 {
-  "generated_at": "2026-08-24T07:04:43.061275+00:00",
-  "count": 70,
+  "generated_at": "2026-08-25T06:53:59.425700+00:00",
+  "count": 68,
   "offres": [
+    {
+      "id": "212VBPM",
+      "titre": "Conducteur-régleur / Conductrice-régleuse de machines de façonnag (H/F)",
+      "entreprise": "SYNERGIE",
+      "lieu": "02 - Folembray",
+      "date_publication": "2026-08-24T10:22:27.322Z",
+      "description": "Notre client est une entreprise industrielle implantée à Folembray (Aisne), spécialisée dans la plasturgie, plus précisément dans l'injection de matières plastiques et la fabrication de pièces techniques destinées à différents secteurs industriels. Rattaché(e) au responsable de production, vous aurez pour principales missions de :\n\n* Réaliser les changements de séries et assurer le réglage des mac",
+      "salaire": "Annuel de 25000.0 Euros à 35000.0 Euros sur 12 mois",
+      "duree_contrat": "39H/semaine\nTravail en horaires décalés",
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/212VBPM"
+    },
     {
       "id": "212TWKD",
       "titre": "Conducteur / Conductrice de presses à dorer en industrie graphiqu (H/F)",
@@ -168,17 +179,6 @@
       "url": "https://candidat.francetravail.fr/offres/recherche/detail/6143004"
     },
     {
-      "id": "6138169",
-      "titre": "Massicotier / Massicotière en industrie graphique (H/F)",
-      "entreprise": "Temporis Toul",
-      "lieu": "54 - Villey-Saint-Étienne",
-      "date_publication": "2026-08-20T08:01:49.024Z",
-      "description": "Vous recherchez un poste où chaque journée apporte son lot de missions et de défis à relever ? \n\nLa convivialité, l'autonomie et le professionnalisme vous caractérisent ? Alors rejoignez l'aventure Temporis, le premier réseau national d'agences d'emploi en franchise !\n\nL'agence d'emploi (, intérim et formation) Temporis Toul recherche pour l'un de ses clients un(e) Massicotier / Cariste polyvalent",
-      "salaire": "",
-      "duree_contrat": "35H/semaine",
-      "url": "https://candidat.francetravail.fr/offres/recherche/detail/6138169"
-    },
-    {
       "id": "6124295",
       "titre": "CONDUCTEUR DE MACHINES D'IMPRESSION (INDUSTRIES GRAPHIQUES) (H/F)",
       "entreprise": "Randstad",
@@ -327,7 +327,7 @@
       "entreprise": "LTD INTERNATIONAL",
       "lieu": "94 - Orly",
       "date_publication": "2026-08-19T09:22:50.651Z",
-      "description": "LTd compte 9 agences spécialisées en recrutement et en travail temporaire organisées par pôle d'expertise en Ingénierie, Tertiaire Haut de Gamme - Fonctions Supports sur la France entière et à l'International. Ltd assure Qualité et Performance, fondé sur une procédure de recrutement rigoureuse et adaptée aux exigences du marché.\n\nAu sein de notre département spécialisé en impression numérique gran",
+      "description": "LTD compte 9 agences spécialisées en recrutement et en travail temporaire organisées par pôle d'expertise en Ingénierie, Tertiaire Haut de Gamme - Fonctions Supports sur la France entière et à l'International. Ltd assure Qualité et Performance, fondé sur une procédure de recrutement rigoureuse et adaptée aux exigences du marché.\n\nAu sein de notre département spécialisé en impression numérique gran",
       "salaire": "Horaire de 16.0 Euros à 16.5 Euros sur 12 mois",
       "duree_contrat": "35H/semaine\nTravail en journée",
       "url": "https://candidat.francetravail.fr/offres/recherche/detail/212QKRM"
@@ -509,17 +509,6 @@
       "url": "https://candidat.francetravail.fr/offres/recherche/detail/212NYDW"
     },
     {
-      "id": "212NPZN",
-      "titre": "Infographiste (H/F)",
-      "entreprise": "PROMAN",
-      "lieu": "14 - Bénouville",
-      "date_publication": "2026-08-17T15:24:14.931Z",
-      "description": "Le poste :\nVotre agence d'intérim PROMAN recrute un Graphiste Communication H/F. Vous viendrez en renfort à un permanent de la société à PARTIR DU 24 AOUT 2026 Dans le cadre de votre mission, vous serez en charge de : - Produire des supports visuels variés pour représenter l'identité graphique des marques du Laboratoire. \n- Développer et animer la communication digitale du Laboratoire à travers le",
-      "salaire": "Horaire de 13.0 Euros à 15.0 Euros sur 12 mois",
-      "duree_contrat": "35H/semaine\nTravail en journée",
-      "url": "https://candidat.francetravail.fr/offres/recherche/detail/212NPZN"
-    },
-    {
       "id": "212NNVC",
       "titre": "Technicien / Technicienne essai-contrôle qualité en industrie gra (H/F)",
       "entreprise": "SYNERGIE INDUSTRIE AERONAUTIQUE",
@@ -551,6 +540,17 @@
       "salaire": "Horaire de 12.31 Euros à 13.0 Euros sur 12 mois",
       "duree_contrat": "35H/semaine\nTravail en horaires décalés",
       "url": "https://candidat.francetravail.fr/offres/recherche/detail/212MWDN"
+    },
+    {
+      "id": "6025092",
+      "titre": "Opérateur/trice de production H/F",
+      "entreprise": "ARTUS INTERIM SAINT JUNIEN",
+      "lieu": "87 - Rochechouart",
+      "date_publication": "2026-08-15T14:35:38.022Z",
+      "description": "Envie d'un job qui matche avec votre talent ? Chez ARTUS on a l'offre qu'il vous faut ! Rejoignez nous et transformez vos journées en une nouvelle aventure professionnelle !\n\nARTUS INTERIM recherche un(e) opérateur(trice) de production !\n\nVos missions principales sont :\n\n-Décortiquer les cartons après leur découpage afin d'enlever les déchets en trop. \n-Mettre en forme. \n-Ranger en cartons ou box.",
+      "salaire": "Horaire de 12.31 Euros à 12.31 Euros",
+      "duree_contrat": "",
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/6025092"
     },
     {
       "id": "6021381",
@@ -683,28 +683,6 @@
       "salaire": "",
       "duree_contrat": "\nTravail en journée",
       "url": "https://candidat.francetravail.fr/offres/recherche/detail/5551964"
-    },
-    {
-      "id": "5463022",
-      "titre": "Dessinateur Junior (H/F)",
-      "entreprise": "Non précisé",
-      "lieu": "13 - Fos-sur-Mer",
-      "date_publication": "2026-07-25T11:51:30.000Z",
-      "description": "Nous recherchons pour notre client basé sur FOS SUR MER, un Dessinateur JUNIOR (H/F). Vous êtes en charge de : - Réaliser, modifier et préparer les plans des pièces afin de les rendre exploitables en programmation. - Préparer / éditer les documents de suivi et de contrôle pour le service fabrication. - Faire le reporting dans les différents tableaux de suivi du service. - Renseigner et mettre à jo",
-      "salaire": "",
-      "duree_contrat": "\nTravail en journée",
-      "url": "https://candidat.francetravail.fr/offres/recherche/detail/5463022"
-    },
-    {
-      "id": "5425614",
-      "titre": "DESSINATEUR REVIT (H/F)",
-      "entreprise": "Non précisé",
-      "lieu": "35 - Cesson-Sévigné",
-      "date_publication": "2026-07-24T12:08:07.000Z",
-      "description": "Nous recherchons pour notre client, entreprise reconnue dans le secteur du bâtiment, un Dessinateur REVIT H/F. Vos missions : - Réaliser des plans et des modèles 3D sur REVIT pour des projets de construction ou de rénovation. - Participer à la conception et à la mise à jour des dossiers techniques. - Collaborer étroitement avec les équipes. - Veiller au respect des normes de sécurité et des réglem",
-      "salaire": "",
-      "duree_contrat": "\nTravail en journée",
-      "url": "https://candidat.francetravail.fr/offres/recherche/detail/5425614"
     },
     {
       "id": "5386995",
